@@ -211,6 +211,7 @@ The syntax for INNER JOIN:-
 FROM TABLE1
 INNER JOIN TABLE2
 ON TABLE1.COMMON_FIELD = TABLE2.COMMON_FIELD;
+
 [Know more about INNER JOIN query](https://www.tutorialspoint.com/sql/sql-inner-joins.htm)
 
 **2. RIGHT JOIN:-** RIGHT JOIN is used to return all the rows from the right table even if there are no matches in the left table.
@@ -219,6 +220,7 @@ Syntax for RIGHT JOIN:-
 FROM TABLE1
 RIGHT JOIN TABLE2
 ON TABLE1.COMMON_FIELD = TABLE2.COMMON_FIELD;
+
 [Know more about INNER JOIN](https://www.tutorialspoint.com/sql/sql-right-joins.htm)
 
 **3. LEFT JOIN:-** LEFT JOIN is used to return all the rows from the left table even if there are no matches in the right table.
@@ -228,6 +230,7 @@ Syntax for LEFT JOIN:-
 FROM TABLE1
 LEFT JOIN TABLE2
 ON TABLE1.COMMON_FIELD = TABLE2.COMMON_FIELD;
+
 [Know more about LEFT JOIN](https://www.tutorialspoint.com/sql/sql-left-joins.htm)
 
 **4. FULL JOIN:-** FULL JOIN is used to returns the rows when there is a match in one of the tables.
@@ -237,6 +240,7 @@ The syntax for FULL JOIN:-
 FROM TABLE1
 FULL JOIN TABLE2
 ON TABLE1.COMMON_FIELD = TABLE2.COMMON_FIELD;
+
 [Know more about FULL JOIN](https://www.tutorialspoint.com/sql/sql-full-joins.htm)
 
 ## SQL Aggregate Functions
@@ -275,6 +279,7 @@ Example:- COUNT with WHERE
 
 It will produce the following output:-
 >3
+
 [Know more about `COUNT()` function](https://www.javatpoint.com/dbms-sql-aggregate-function#:~:text=SQL%20Aggregate%20Functions,used%20to%20summarize%20the%20data.)
 
 **2. SUM Function:_**
