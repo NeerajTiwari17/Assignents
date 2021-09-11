@@ -61,7 +61,6 @@ Syntax of `TRUNCATE` command:-
 `TRUNCATE TABLE TABLE_NAME;`
 
 Let's take an example:-
-
 `TRUNCATE TABLE STUDENT;`
 
 **2. DML Commands**:- DML stands for **Data Manipulation Language**.
