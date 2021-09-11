@@ -225,6 +225,7 @@ It will produce the following output:-
 Note:- You can also use <, >, <= ,>=, != operators with the `WHERE` clause based on condition.
 
 **Types of JOINs:-**
+
 **1. INNER JOIN:-** INNER JOIN used to return only those rows which are matches in both tables.
 
 The syntax for INNER JOIN:-
