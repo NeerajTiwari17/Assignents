@@ -21,10 +21,10 @@ Here are some DDL commands:-
 
 **1. CREATE**:- It is used to create a new table in the database.
 Syntax of `CREATE` command:-
-> CREATE TABLE TABLE_NAME (COLUMN_1 DATATYPE, COLUN_2 DATATYPE,...);
+`CREATE TABLE TABLE_NAME (COLUMN_1 DATATYPE, COLUN_2 DATATYPE,...);`
 
 Let's take an example:-
->CREATE TABLE STUDENT(Roll_No INT, Name VARCHAR(20), DOB DATE);
+`CREATE TABLE STUDENT(Roll_No INT, Name VARCHAR(20), DOB DATE);`
 
 Table will look like:- 
 |Roll_No|Name|DOB|
@@ -36,10 +36,10 @@ Table will look like:-
 **2. DROP**:- It is used to drop/delete the table with the structure and the records.
 
 Syntax of `DROP` Comand:- 
->DROP TABLE TABLE_NAME;
+`DROP TABLE TABLE_NAME;`
 
-Let's take a example:- 
-> DROP TABLE STUDENT;
+Let's take an example:- 
+`DROP TABLE STUDENT;`
 
 [Know more about `DROP` Command](https://www.javatpoint.com/sql-drop-table)
 
@@ -48,21 +48,21 @@ Let's take a example:-
 Syntax of `ALTER` command:- 
 
 Add a new column in the table:-
-> ALTER TABLE TABLE_NAME ADD NEW_COLUMN COLUMN_DEFINITION;
+`ALTER TABLE TABLE_NAME ADD NEW_COLUMN COLUMN_DEFINITION;`
 
 Let's take an example:-
-> ALTER TABLE STUDENT ADD Contact_No VARCHAR(13);
+`ALTER TABLE STUDENT ADD Contact_No VARCHAR(13);`
 
 [Know more about `ALTER` Command](https://www.javatpoint.com/sql-alter-table)
 
 **4. TRUNCATE**:- It is used to delete all the rows from a table.
 
 Syntax of `TRUNCATE` command:- 
-> TRUNCATE TABLE TABLE_NAME;
+`TRUNCATE TABLE TABLE_NAME;`
 
 Let's take an example:-
 
-> TRUNCATE TABLE STUDENT;
+`TRUNCATE TABLE STUDENT;`
 
 **2. DML Commands**:- DML stands for **Data Manipulation Language**.
 These commands are used to insert/modify the records in the database.
@@ -74,10 +74,10 @@ Here are some DML commands:-
 
 **1. INSERT**:- It is used to insert a new row with data in the table.
 Syntax of `INSERT` Command is:
-> INSERT INTO TABLE_NAME(COLUMN_1, COLUMN_2,...) VALUES (VALUE_1, VALUE_2,...);
+`INSERT INTO TABLE_NAME(COLUMN_1, COLUMN_2,...) VALUES (VALUE_1, VALUE_2,...);`
 
 Let's take a example:-
->INSERT INTO TABLE_NAME(Roll_No Name,DOB) VALUES (18, "Arnav","1976-01-09");
+`INSERT INTO TABLE_NAME(Roll_No Name,DOB) VALUES (18, "Arnav","1976-01-09");`
 
 Now table will be like:- 
 |Roll_No|Name|DOB|
@@ -87,12 +87,12 @@ Now table will be like:-
 [Know more about `INSERT` query...](https://www.javatpoint.com/sql-insert)
 
 
-**2. UPDATE**:- It is used to update the value in the column in database.
+**2. UPDATE**:- It is used to update the value in the column in databases.
 Syntax of `UPDATE` Command is:
-> UPDATE TABLE_NAME SET[COLUMN_1 = NEW_VALUE_1, COLUMN_2 = NEW_VALUE_2, ...] [WHERE CONDITION];
+`UPDATE TABLE_NAME SET[COLUMN_1 = NEW_VALUE_1, COLUMN_2 = NEW_VALUE_2, ...] [WHERE CONDITION];`
 
 Let's take a example:-
->UPDATE STUDENT SET  Name = "Arnav Goswami" WHERE Roll_No = 18;
+`UPDATE STUDENT SET  Name = "Arnav Goswami" WHERE Roll_No = 18;`
 
 Now table will be like:- 
 |Roll_No|Name|DOB|
@@ -103,10 +103,10 @@ Now table will be like:-
 
 **3. DELETE**:- It is used to delete one or more rows in the table.
 Syntax of `DELETE` query is:
-> DELETE FROM TABLE_NAME [WHERE CONDITION];
+`DELETE FROM TABLE_NAME [WHERE CONDITION];`
 
 Let's take an example:-
->DELETE FROM STUDENT WHERE Roll_No = 18;
+`DELETE FROM STUDENT WHERE Roll_No = 18;`
 
 Now table will be like:- 
 |Roll_No|Name|DOB|
@@ -122,11 +122,11 @@ It uses only one query give below:-
 
 Syntax for `SELECT` Query:- 
 
-> SELECT * FROM TABLE_NAME;
+`SELECT * FROM TABLE_NAME;`
 
 
 for example:-
-> SELECT * FROM STUDENT;
+`SELECT * FROM STUDENT;`
 
 Now you can see the output will be like:-
 |Roll_No|Name|DOB|
@@ -134,14 +134,14 @@ Now you can see the output will be like:-
 | 18 |Arnav Goswami | 1976-01-09  |
 | 19 |Alok Singh | 1977-05-02  |
 
->Note:- The * (asterisk) is used to fetch all the data from tables.
+Note:- The * (asterisk) is used to fetch all the data from tables.
 
-Let's say you have multiple rows in your STUDENT table and you want to access only one row from that table. Then you can consider `WHERE` clause in your query.
+Let's say you have multiple rows in your STUDENT table, and you want to access only one row from that table. Then you can consider `WHERE` clause in your query.
 Syntax for `SELECT` with `WHERE` clause:-
-> SELECT * FROM TABLE_NAME [WHERE CONDITION];
+`SELECT * FROM TABLE_NAME [WHERE CONDITION];`
 
 for example:-
->SELECT * FROM STUDENT WHERE Roll_No = 18;
+`SELECT * FROM STUDENT WHERE Roll_No = 18;`
 
 Now you can see the output will be like:-
 |Roll_No|Name|DOB|
@@ -152,7 +152,7 @@ You can remove * with one or more column names which one you want to access.
 
 for example:-
 
->SELECT Name FROM STUDENT WHERE Roll_No = 18;
+`SELECT Name FROM STUDENT WHERE Roll_No = 18;`
 
 Now you can see the output like:-
 |Name|
@@ -188,9 +188,9 @@ Let's take a look following two tables:-
 
 Now let's JOIN two tables with `SELECT` operation and see what happens:-
 
->SELECT Roll_No, NAME, Status
+`SELECT Roll_No, NAME, Status
    FROM STUDENT, STUDENT_LIB
-   WHERE  STUDENT.Roll_No = STUDENT_LIB.S_Roll_No;
+   WHERE  STUDENT.Roll_No = STUDENT_LIB.S_Roll_No;`
 
 It will produce the following output:-
 |Roll_No|Name|Status|
@@ -201,7 +201,7 @@ It will produce the following output:-
 | 21 |Mandeep Singh | Book3 issued  |
 
 
->Note:- You can also use <, >, <= ,>=, != operators with the `WHERE` clause based on condition.
+Note:- You can also use <, >, <= ,>=, != operators with the `WHERE` clause based on condition.
 
 **Types of JOINs:-**
 **1. INNER JOIN:-** INNER JOIN used to return only those rows which are matches in both tables.
@@ -269,16 +269,16 @@ Roll_No|Name|Fee|
 | 22 | Sachin | 1500|
 
 Example:- COUNT()
->SELECT COUNT(*) FROM STUDENT;  
+`SELECT COUNT(*) FROM STUDENT;`  
 
 It will produce the following output:-
->5
+`5`
 
 Example:- COUNT with WHERE
->SELECT COUNT(*) FROM STUDENT WHERE Roll_no >= 18 and Roll_no <= 20; 
+`SELECT COUNT(*) FROM STUDENT WHERE Roll_no >= 18 and Roll_no <= 20;` 
 
 It will produce the following output:-
->3
+`3`
 
 [Know more about `COUNT()` function](https://www.javatpoint.com/dbms-sql-aggregate-function#:~:text=SQL%20Aggregate%20Functions,used%20to%20summarize%20the%20data.)
 
@@ -291,16 +291,16 @@ Syntax for SUM function:-
 or  
 SUM( [ALL|DISTINCT] expression ) 
 Example:- SUM()
->SELECT SUM(Fee) FROM STUDENT;
+`SELECT SUM(Fee) FROM STUDENT;`
 
 It will produce the following output:-
->7900
+`7900`
 
 Example:- SUM() with WHERE
->SELECT SUM(Fee) FROM STUDENT WHERE Fee > 1200;
+`SELECT SUM(Fee) FROM STUDENT WHERE Fee > 1200;`
 
 It will produce the following output:-
->6700
+`6700`
 
 [Know more about `SUM()` function](https://www.javatpoint.com/dbms-sql-aggregate-function#:~:text=SQL%20Aggregate%20Functions,used%20to%20summarize%20the%20data.)
 
@@ -312,10 +312,10 @@ or
 AVG( [ALL|DISTINCT] expression)  
 
 Example:- 
->SELECT AVG(Fee) FROM STUDENT; 
+`SELECT AVG(Fee) FROM STUDENT;` 
 
 It will produce the following output:-
->1580.00
+`1580.00`
 
 **4. MAX Function:-**
 This function is used to find the max value of a specified column.
@@ -326,10 +326,10 @@ or
 MAX( [ALL|DISTINCT] expression)
 
 Example:- 
->SELECT MAX(Fee) FROM STUDENT; 
+`SELECT MAX(Fee) FROM STUDENT;` 
 
 It will produce the following output:-
->2000
+`2000`
 
 **3. MIN Function:-**
 This function is used to find the minimum value of a specified column. This function finds the smallest value of a specified column.
@@ -343,7 +343,7 @@ Example:-
 FROM STUDENT;  
 
 It will produce the following output:-
->1200
+`1200`
 
 
 
