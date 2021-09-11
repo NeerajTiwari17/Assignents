@@ -84,7 +84,7 @@ Syntax of `INSERT` Command is:
 
 `INSERT INTO TABLE_NAME(COLUMN_1, COLUMN_2,...) VALUES (VALUE_1, VALUE_2,...);`
 
-Let's take a example:-
+Let's take an example:-
 
 `INSERT INTO TABLE_NAME(Roll_No Name,DOB) VALUES (18, "Arnav","1976-01-09");`
 
@@ -152,6 +152,7 @@ Note:- The * (asterisk) is used to fetch all the data from tables.
 
 Let's say you have multiple rows in your STUDENT table, and you want to access only one row from that table. Then you can consider `WHERE` clause in your query.
 Syntax for `SELECT` with `WHERE` clause:-
+
 `SELECT * FROM TABLE_NAME [WHERE CONDITION];`
 
 for example:-
@@ -275,7 +276,8 @@ or
 COUNT( [ALL|DISTINCT] expression ) 
 
 Let's create the sample table STUDENT:
-Roll_No|Name|Fee|
+
+|Roll_No|Name|Fee|
 |--- |--- |---|
 | 18 |Arnav Goswami  | 2000|
 | 19 |Alok Singh  |1400|
