@@ -131,6 +131,7 @@ Now table will be like:-
 **3. DQL Command**:- DQL stands for **Data Query Language**. It is used to retrieve data from the database.
 
 It uses only one query give below:-
+
 **1. SELECT**:- `SELECT` is used to fetch a row or more rows from the database.
 
 Syntax for `SELECT` Query:- 
@@ -186,7 +187,9 @@ Now let's move to some advanced concepts of SQL.
 JOIN is used to combine the records from more than one table. It is used with the `SELECT` command when fetching the record from more than one table.
 
 Let's take a look following two tables:-
+
 **Table 1-** STUDENT Table
+
 |Roll_No|Name|DOB|
 |--- |---  |--- |
 | 18 |Arnav Goswami | 1976-01-09  |
@@ -194,7 +197,8 @@ Let's take a look following two tables:-
 | 20 |Animesh Sharma | 1991-05-04  |
 | 21 |Mandeep Singh | 1989-04-08  |
 
-**Table 1-** STUDENT_LIB Table
+**Table 2-** STUDENT_LIB Table
+
 |LID|Date|S_Roll_No| Status |
 |--- |---  |--- |--- |
 | 01 |2021/05/06 | 18  |Book1 issued   | 
@@ -209,6 +213,7 @@ Now let's JOIN two tables with `SELECT` operation and see what happens:-
    WHERE  STUDENT.Roll_No = STUDENT_LIB.S_Roll_No;`
 
 It will produce the following output:-
+
 |Roll_No|Name|Status|
 |--- |---  |--- |
 | 18 |Arnav Goswami | Book1 issued  |
